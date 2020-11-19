@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>AOB Photos</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .priceOptions {
+      margin-top: 3%;
+      max-width: 2000px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+
+    .each {
+      padding: 10px;
+      min-width: 400px;
+      max-width: 400px;
+      box-sizing: border-box;
+    }
+
+    div img {
+      height: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contents {
+      background: white;
+      padding: 40px 20px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 10px #00000070;
+    }
+
+    .contents ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    .contents ul li {
+      padding: 10px 0;
+      list-style: none;
+    }
+
+    .contents a {
+      color: #2c3e50;
+      border: 2px solid #2c3e50;
+      display: block;
+      padding: 10px 0;
+      border-radius: 40px;
+      font-size: 14px;
+      transition: 0.5s linear;
+    }
+
+    .contents a:hover {
+      background: #2c3e50;
+      color: #fff;
+    }
+
+    .testimonials {
+      margin-top: 3%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  </style>
+</head>
+
+<body>
+  <h1><a href="index.html"><img src="pics/logo4.png" class="logo"></a></h1>
+
+  <!-- horizontal menu -->
+  <nav>
+    <a href="index.html" class="navHome">Home</a>
+    <ul>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+    <a href="investment.html" class="currentPage">Investment</a>
+  </nav>
+
+  <!-- pricings  -->
+  <div class="priceOptions">
+    <div class="each">
+      <div class="contents">
+        <h2>MINI SESSION</h2>
+        <div>
+          <img src="pics/img6.jpg">
+        </div>
+
+        <ul>
+          <li><strong>30</strong> Minutes</li>
+          <li><strong>10</strong> selected images from a larger gallery</li>
+          <li><strong>*</strong> Option to purchase additional</li>
+          <li>Up to 6 people</li>
+        </ul>
+        <a href="#">$60</a>
+      </div>
+    </div>
+
+    <div class="each">
+      <div class="contents">
+        <h2>FULL SESSION</h2>
+        <div>
+          <img src="pics/img7.jpg">
+        </div>
+
+        <ul>
+          <li>Up to an hour</li>
+          <li><strong>30</strong> selected images from a larger gallery</li>
+          <li><strong>*</strong> Option to purchase additional</li>
+          <li>Up to 6 people</li>
+        </ul>
+        <a href="#">$150</a>
+      </div>
+    </div>
+
+    <div class="each">
+      <div class="contents">
+        <h2>GROUP SESSION</h2>
+        <div>
+          <img src="pics/img5 - copy.jpg">
+        </div>
+
+        <ul>
+          <li>Up to an 1.5 hours</li>
+          <li>selected images from a larger gallery</li>
+          <li><strong>*</strong> Option to purchase additional</li>
+          <li>Up to 6 people</li>
+        </ul>
+        <a href="#">INQUIRE NOW</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- scroll requirement -->
+  <section class="testimonials">
+    <iframe src="testimonials.html" width="600px" height="500" style="border:none;"></iframe>
+  </section>
+
+</body>
+
+</html>

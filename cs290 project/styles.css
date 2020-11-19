@@ -1,0 +1,224 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 2000px;
+}
+
+.carousel {
+    margin: 0;
+    padding: 0;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontalSlide {
+    width: 1000px;
+    height: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 700px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 1000px;
+    height: 700;
+}
+
+.navigationManual {
+    position: absolute;
+    width: 1000px;
+    margin-top: 600px;
+    /* location of the buttons  */
+    display: flex;
+    justify-content: center;
+}
+
+.manualButton {
+    border: 2px solid whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.manualButton:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manualButton:hover {
+    background: white;
+    /* color when you hover over  the buttons */
+}
+
+#radio1:checked~.showing {
+    margin-left: 0;
+}
+
+#radio2:checked~.showing {
+    margin-left: -20%;
+}
+
+#radio3:checked~.showing {
+    margin-left: -40%;
+}
+
+#radio4:checked~.showing {
+    margin-left: -60%;
+}
+
+/* for auto nav */
+
+.autoNavigation {
+    position: absolute;
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    margin-top: 600px;
+}
+
+.autoNavigation div {
+    border: 2px solid whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.autoNavigation div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.autoNavigation .autoButton1 {
+    background: white;
+}
+
+#radio2:checked~.autoNavigation .autoButton2 {
+    background: white;
+}
+
+#radio3:checked~.autoNavigation .autoButton3 {
+    background: white;
+}
+
+#radio4:checked~.autoNavigation .autoButton4 {
+    background: white;
+}
+
+/* Next & previous buttons */
+.leftRight {
+    position: absolute;
+    width: 1000px;
+    margin-top: -350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prev {
+    border: 2px solid whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 2s;
+}
+.next {
+    border: 2px solid whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.prev:hover, .next:hover {
+    background: white;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1;
+    width: 400px;
+}
+
+/* horizontal menu start */
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 40px;
+    font-family: Parisienne-Regular;
+}
+
+nav ul, nav li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* horizontal menu end */
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: black;
+}
+
+a:hover {
+    color: lightslategray;
+}
+
+a.currentPage {
+    color: lightsteelblue;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'Parisienne-Regular';
+    src: url('/fonts/Parisienne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSansCondensed-Bold';
+    src: url('/fonts/OpenSansCondensed-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSansCondensed-Light';
+    src: url('/fonts/OpenSansCondensed-Light.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSansCondensed-LightItalic';
+    src: url('/fonts/OpenSansCondensed-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: 'ShadowsIntoLight-Regular';
+    src: url('/fonts/ShadowsIntoLight-Regular.ttf');
+}
+
