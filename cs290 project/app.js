@@ -1,6 +1,7 @@
 // Carousel automation
 var counter = 2;
-setInterval(function(){
+
+setInterval(function(){  // https://www.w3schools.com/js/js_timing.asp
   document.getElementById('radio' + counter).checked = true;
   counter ++
   if (counter > 4){

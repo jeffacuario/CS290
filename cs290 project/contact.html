@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <title>AOB Photos</title>
     <link rel="stylesheet" href="styles.css">
-
     <style>
         .contactPage {
             margin-top: 5%;
@@ -57,7 +56,6 @@
             line-height: 25px;
             font-family: ShadowsIntoLight-Regular;
             margin: 1em;
-
             border: 1px solid rgba(199, 199, 199, 0.1);
             border-radius: 4px;
             background: whitesmoke;
@@ -99,25 +97,19 @@
 </head>
 
 <body>
-    <h1><a href="index.html"><img src="pics/logo4.png" class="logo"></a></h1>
-
+    <h1><a href="home.html"><img src="pics/logo4.png" class="logo"></a></h1>
     <!-- horizontal menu -->
     <nav>
-        <a href="index.html" class="navHome">Home</a>
+        <a href="home.html">Home</a>
         <ul>
-            <li>
-                <a href="about.html">About</a>
-            </li>
-            <li>
-                <a href="contact.html" class="currentPage">Contact</a>
-            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="currentPage">Contact</a></li>
         </ul>
-        <a href="investment.html" class="navInvestment">Investment</a>
+        <a href="investment.html">Investment</a>
     </nav>
 
     <div class="contactPage">
         <section class="formInfo">
-
             <div class="contactInfo">
                 <h1 class="contactHeader">Get In Touch!</h1>
                 <p>I'd love to get to know you.</p>
@@ -127,13 +119,11 @@
                 </div>
             </div>
 
-
             <!-- contact start here -->
             <div class="form">
                 <form
                     action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php"
                     method="POST">
-
                     <div>
                         <label for="choice">Interested investment:</label>
                         <select id="choice" name="choice" required>
@@ -151,7 +141,6 @@
                         <input type="text" name="last" id="last" placeholder="Last Name" required>
                         <label for="last"></label>
                     </div>
-
                     <div>
                         <input type="email" name="email" id="email" placeholder="Email" required>
                         <label for="email"></label>
@@ -164,7 +153,6 @@
                         <input type="text" name="date" id="date" placeholder="Date of Event?" required>
                         <label for="date"></label>
                     </div>
-
                     <div>
                         <textarea name="message" id="" cols="" rows="5" placeholder="Message" style="resize: none;"
                             required></textarea>
@@ -184,12 +172,10 @@
         </section>
 
         <section class="downloadTerms">
-            <a href="terms_of_service.pdf" download=""><button class="downloadButton"><i class="fa fa-download"></i>
-                    Terms of
-                    Service</button></a>
+            <a href="terms_of_service.pdf" download=""><button class="downloadButton"><i
+                        class="fa fa-download"></i>Terms of Service</button></a>
         </section>
     </div>
-
 </body>
 
 </html>
